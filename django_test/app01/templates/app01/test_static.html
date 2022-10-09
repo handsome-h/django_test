@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--由于前面介绍的django文件搜索机制，在静态文件夹中，我们最好在指定一级和app同名的文件夹用来区分不同app间的静态文件。-->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app01/site.css' %}">
+</body>
+</html>
